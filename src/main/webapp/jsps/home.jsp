@@ -74,7 +74,7 @@
 
     <!-- Contact Info -->
     <div class="info-card text-center">
-        <img src="images/N2N Consultations Pvt Ltd.jpg" alt="N2N Consultations Pvt Ltd Logo" width="120" class="mb-3 rounded-circle shadow">
+        <img src="images/N2N Consultations Pvt Ltd.jpg" alt="N2N Consultations Pvt Ltd" width="120" class="mb-3 rounded-circle shadow">
         <h4>N2N Consultations Pvt Ltd</h4>
         <p><b>Address:</b> Sattenaplli, Palnadu(Dt) , A.P </p>
         <p><b>Phone:</b> +91-9121856196</p>
