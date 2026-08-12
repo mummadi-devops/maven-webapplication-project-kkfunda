@@ -46,7 +46,7 @@
 <body>
 
 <header>
-    <h1>🚀 Naveen web application 🚀</h1>
+    <h1>🚀 DevOps 🚀</h1>
     <h3>Training | Development | Consulting</h3>
 </header>
 
