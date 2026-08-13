@@ -46,7 +46,7 @@
 <body>
 
 <header>
-    <h1>🚀 DevOps 🚀</h1>
+    <h1>🚀 AI DevOps 🚀</h1>
     <h3>Training | Development | Learning</h3>
 </header>
 
