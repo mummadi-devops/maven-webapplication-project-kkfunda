@@ -47,7 +47,7 @@
 
 <header>
     <h1>🚀 DevOps 🚀</h1>
-    <h3>Training | Development | Consulting</h3>
+    <h3>Training | Development | Learning</h3>
 </header>
 
 <div class="container">
