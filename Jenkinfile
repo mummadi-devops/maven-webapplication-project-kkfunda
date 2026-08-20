@@ -1,35 +1,63 @@
-node
+pipeline 
 {
- // /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven-3.9.16/bin
- def  mavenHome=tool name: "maven-3.9.16"
- stage('git checkout')
- {
-  git branch: 'main', url: 'https://github.com/mummadi-devops/maven-webapplication-project-kkfunda.git'
- }
-  stage('compile')
- {
-  sh "${mavenHome}/bin/mvn compile"
- }
-  stage('Build')
- {
-  sh "${mavenHome}/bin/mvn clean package"
- }
- stage('SQ REPORT')
- {
-  sh "${mavenHome}/bin/mvn sonar:sonar"
- }
- stage('Deploy Nexus Artifact')
- {
-  sh "${mavenHome}/bin/mvn clean deploy"
- }
-  stage('Deploy to Tomcat') 
+  agent any
+  tools
+  {
+    maven "maven-3.9.16"
+  }
+  stages
+  {
+    stage('git checkout')
     {
-      
-      sh """
+      steps
+      {
+      git branch: 'main', url: 'https://github.com/mummadi-devops/maven-webapplication-project-kkfunda.git'
+      }
+    }
+    stage('COMPILE')
+    {
+      steps
+      {
+        sh "mvn compile"
+      }
+    }
+   stage('Build')
+    {
+      steps
+      {
+        sh "mvn clean package"
+      }
+    }
+    stage('SQ Report')
+    {
+      steps
+      {
+        sh "mvn sonar:sonar"
+      }
+    }
+   stage('Articat Backup')
+    {
+      steps
+      {
+        sh "mvn deploy"
+      }
+    }
+   stage('Deploy To Tomcat')
+    {
+      steps
+      {
+        sh """
 
       curl -u admin:admin123 \
-     --upload-file /var/lib/jenkins/workspace/scripted-way-PL/target/maven-web-application.war \
-     "http://15.207.71.1:8080//manager/text/deploy?path=/maven-web-application&update=true"
-         """
+--upload-file /var/lib/jenkins/workspace/Declarative-way-PL/target/maven-web-application.war \
+"http://13.232.202.182:8080/manager/text/deploy?path=/maven-web-application&update=true"
+          
+        """
+      }
     }
-}
+
+
+
+  } //stages ending
+    
+} //pipeline ending
