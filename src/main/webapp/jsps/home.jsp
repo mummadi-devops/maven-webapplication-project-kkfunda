@@ -46,7 +46,7 @@
 <body>
 
 <header>
-    <h1>🚀 AI - DevOps 🚀</h1>
+    <h1>🚀 AI DevOps 🚀</h1>
     <h4>Training | Development | Learning | Sucsuss</h4>
 </header>
 
@@ -78,8 +78,8 @@
         <h4>N2N Consultations Pvt Ltd</h4>
         <p><b>Address:</b> Sattenaplli, Palnadu(Dt) , A.P-522403 </p>
         <p><b>Phone:</b> +91-9121856196</p>
-        <p><b>Email:</b> <a href="mailto:N2Neducation@gmail.com">N2Neducation@gmail.com</a></p>
-        <a href="mailto:N2Neducation@gmail.com" class="btn btn-primary mt-2">📧 Mail to N2N Consultations Pvt Ltd  </a>
+        <p><b>Email:</b> <a href="mailto:N2N education@gmail.com">N2N education@gmail.com</a></p>
+        <a href="mailto:N2N education@gmail.com" class="btn btn-primary mt-2">📧 Mail to N2N Consultations Pvt Ltd  </a>
     </div>
 
     <!-- Service Links -->
